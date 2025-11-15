@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{661C3E81-825F-40B1-BB84-98D03DA1D120}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Driving_Managment_System</RootNamespace>
+    <AssemblyName>Driving Managment System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addfeedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addfeedback.Designer.cs">
+      <DependentUpon>addfeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addguidelines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addguidelines.Designer.cs">
+      <DependentUpon>addguidelines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addleaves.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addleaves.Designer.cs">
+      <DependentUpon>addleaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addstaffsal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addstaffsal.Designer.cs">
+      <DependentUpon>addstaffsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.cs">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Director.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director.Designer.cs">
+      <DependentUpon>Director.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instructor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instructor.Designer.cs">
+      <DependentUpon>Instructor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecturer.Designer.cs">
+      <DependentUpon>Lecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lecturesadd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lecturesadd.Designer.cs">
+      <DependentUpon>lecturesadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginstaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginstaff.Designer.cs">
+      <DependentUpon>Loginstaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptionist.Designer.cs">
+      <DependentUpon>Receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash Board Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash Board Admin.Designer.cs">
+      <DependentUpon>Dash Board Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dash Board Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dash Board Student.Designer.cs">
+      <DependentUpon>Dash Board Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="Manage Lesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Lesson.Designer.cs">
+      <DependentUpon>Manage Lesson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newfeedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="newfeedback.Designer.cs">
+      <DependentUpon>newfeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newinvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="newinvoice.Designer.cs">
+      <DependentUpon>newinvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newreceipt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="newreceipt.Designer.cs">
+      <DependentUpon>newreceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sessionsadd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sessionsadd.Designer.cs">
+      <DependentUpon>sessionsadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffregister.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="staffregister.Designer.cs">
+      <DependentUpon>staffregister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newschedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="newschedule.Designer.cs">
+      <DependentUpon>newschedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newvehicle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="newvehicle.Designer.cs">
+      <DependentUpon>newvehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Page.Designer.cs">
+      <DependentUpon>Login Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="course.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="course.Designer.cs">
+      <DependentUpon>course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffsignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffsignup.Designer.cs">
+      <DependentUpon>staffsignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stcordinator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stcordinator.Designer.cs">
+      <DependentUpon>stcordinator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student.Designer.cs">
+      <DependentUpon>student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewcourse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewcourse.Designer.cs">
+      <DependentUpon>viewcourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewfeedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewfeedback.Designer.cs">
+      <DependentUpon>viewfeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewguide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewguide.Designer.cs">
+      <DependentUpon>viewguide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewinvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewinvoice.Designer.cs">
+      <DependentUpon>viewinvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewleaves.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewleaves.Designer.cs">
+      <DependentUpon>viewleaves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewreceipts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewreceipts.Designer.cs">
+      <DependentUpon>viewreceipts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewstaffsal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewstaffsal.Designer.cs">
+      <DependentUpon>viewstaffsal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewvehicleinfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewvehicleinfo.Designer.cs">
+      <DependentUpon>viewvehicleinfo.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="addfeedback.resx">
+      <DependentUpon>addfeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addguidelines.resx">
+      <DependentUpon>addguidelines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addleaves.resx">
+      <DependentUpon>addleaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstaffsal.resx">
+      <DependentUpon>addstaffsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director.resx">
+      <DependentUpon>Director.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instructor.resx">
+      <DependentUpon>Instructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecturer.resx">
+      <DependentUpon>Lecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lecturesadd.resx">
+      <DependentUpon>lecturesadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginstaff.resx">
+      <DependentUpon>Loginstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receptionist.resx">
+      <DependentUpon>Receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash Board Admin.resx">
+      <DependentUpon>Dash Board Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dash Board Student.resx">
+      <DependentUpon>Dash Board Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Lesson.resx">
+      <DependentUpon>Manage Lesson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newfeedback.resx">
+      <DependentUpon>newfeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newinvoice.resx">
+      <DependentUpon>newinvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newreceipt.resx">
+      <DependentUpon>newreceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sessionsadd.resx">
+      <DependentUpon>sessionsadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffregister.resx">
+      <DependentUpon>staffregister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newschedule.resx">
+      <DependentUpon>newschedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newvehicle.resx">
+      <DependentUpon>newvehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Page.resx">
+      <DependentUpon>Login Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="course.resx">
+      <DependentUpon>course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffsignup.resx">
+      <DependentUpon>staffsignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stcordinator.resx">
+      <DependentUpon>stcordinator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewcourse.resx">
+      <DependentUpon>viewcourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewfeedback.resx">
+      <DependentUpon>viewfeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewguide.resx">
+      <DependentUpon>viewguide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewinvoice.resx">
+      <DependentUpon>viewinvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewleaves.resx">
+      <DependentUpon>viewleaves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewreceipts.resx">
+      <DependentUpon>viewreceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewstaffsal.resx">
+      <DependentUpon>viewstaffsal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewvehicleinfo.resx">
+      <DependentUpon>viewvehicleinfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transport_16205161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vehicle_15918717.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
